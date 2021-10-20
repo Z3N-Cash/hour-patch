@@ -1,0 +1,18 @@
+title: Git with tha program
+description: >-
+  A generally simplified explanation of what GITHUB is, does , and how you can
+  benefit from it
+template:
+  repo: git-with-tha-program-template
+  name: git-with-tha-program
+before:
+  - type: createIssue
+    title: Welcome!
+    body: new-issue.md
+steps:
+  - title: First step
+    description: The first step in your course
+    event: issues.assigned
+    link: '{{ repoUrl }}'
+    actions:
+      - type: closeIssue
